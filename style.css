@@ -29,6 +29,60 @@ body {
     margin: 0px;
 }
 
+.main_title {
+    font-weight: bolder;
+    font-size: 7.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: var(--peach);
+
+    margin-bottom: 0vh;
+
+    user-select: none;
+}
+
+.main_subtitle {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin-bottom: 12.5vh;
+
+    color: var(--subtext);
+}
+
+#login_button {
+    text-decoration: none;
+    outline: none;
+}
+
+#login_div {
+    width: 25vw;
+    height: 12.5vh;
+
+    border-radius: 16pt;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--surface);
+
+    transition: ease-in-out .125s;
+}
+
+#login_div:hover {
+    scale: 1.2;
+}
+
+#login_div p {
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-weight: bold;
+    font-size: 30pt;
+
+    color: var(--text);
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -99,4 +153,39 @@ form input:focus {
     scale: 1.1;
     background-color: var(--text);
     color: var(--base);
+}
+
+/* flating menu stuff */
+
+.menu_div {
+    position: fixed;
+    bottom: 1vh;
+
+    display: flex;
+
+    align-items: center;
+
+    width: fit-content;
+}
+
+.menu_blob {
+    color: var(--mauve);
+    background-color: var(--surface);
+
+    border-radius: 100%;
+    margin: 1rem;;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 3rem;
+    height: 3rem;
+
+    cursor: pointer;
+    transition: .125s;
+}
+
+.menu_blob:hover {
+    scale: 1.25;
 }
